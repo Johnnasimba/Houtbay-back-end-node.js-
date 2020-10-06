@@ -27,12 +27,16 @@ const withDB = async (operations) => {
 
 app.get('/api/applicants', async (req, res) => {
     withDB(async (db) => {
-        const applicantFirstName = "Alinafe"
         const result = await db.collection("applicants").find({}).toArray();
+        res.status(200).json(result);
+    }, res)
+});
+
+app.get('/api/employer-request', async (req, res) => {
+    withDB(async (db) => {
+        const result = await db.collection("employerRequest").find({}).toArray();
         res.status(200).json(result);      
    }, res)
-    
-
 })
 
 app.get('*', (req, res) => {
