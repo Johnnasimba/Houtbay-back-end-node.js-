@@ -5,7 +5,6 @@ const path = require('path');
 
 
 const app = express();
-app.use(express.static(path.join(__dirname, '/build')));
 const PORT = 8000;
 app.use(bodyParser.json())
 
@@ -39,9 +38,61 @@ app.get('/api/employer-request', async (req, res) => {
    }, res)
 })
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/build/index.html'));
-})
+
+
+
+app.post('/api/applicants/:id', async (req, res) => {
+       
+    try {
+        const { username, text } = req.body
+        const applicantId = parseInt(req.params.id)
+        const url = "mongodb+srv://JOHN:0995816060@cluster0.bfy6i.mongodb.net/JOHN?retryWrites=true&w=majority";
+        const client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+        const db = client.db('JOHN')
+        const applicantInfo = await db.collection('applicants').findOne({ id: applicantId });
+   
+       await db.collection('applicants').updateOne({ id: applicantId },
+            {
+                '$set': {
+                    recommendations: applicantInfo.recommendations.concat({ username, text }),
+                },
+            })
+        const updatedApplicantInfo = await db.collection("applicants").findOne({ id: applicantId })
+        res.status(200).json(updatedApplicantInfo);
+        client.close(); 
+    } catch (error) {
+        res.status(500).json({ message: 'The bug is here', error })
+    }
+    
+   
+
+
+        
+        
+        
+        await db.collection('applicants').updateOne({ id: applicantId },
+            {
+                '$set': {
+                    recommendations: applicantInfo.recommendations.concat({ username, text }),
+                },
+            })
+        const updatedApplicantInfo = await db.collection("applicants").findOne({ id: applicantId })
+        res.status(200).json(updatedApplicantInfo);
+        client.close(); 
+   
+
+        
+});
+
+
+
+
+
+
 app.listen(PORT, () => {
     console.log(` Server Listening on Port ${PORT}`)
 })
+
+
+
+
