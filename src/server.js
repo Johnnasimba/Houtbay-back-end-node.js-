@@ -42,13 +42,10 @@ app.get('/api/employer-request', async (req, res) => {
 
 
 app.post('/api/applicants/:id', async (req, res) => {
-       
-    try {
+
+    withDB(async (db) => {
         const { username, text } = req.body
         const applicantId = parseInt(req.params.id)
-        const url = "mongodb+srv://JOHN:0995816060@cluster0.bfy6i.mongodb.net/JOHN?retryWrites=true&w=majority";
-        const client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
-        const db = client.db('JOHN')
         const applicantInfo = await db.collection('applicants').findOne({ id: applicantId });
    
        await db.collection('applicants').updateOne({ id: applicantId },
@@ -59,29 +56,7 @@ app.post('/api/applicants/:id', async (req, res) => {
             })
         const updatedApplicantInfo = await db.collection("applicants").findOne({ id: applicantId })
         res.status(200).json(updatedApplicantInfo);
-        client.close(); 
-    } catch (error) {
-        res.status(500).json({ message: 'The bug is here', error })
-    }
-    
-   
-
-
-        
-        
-        
-        await db.collection('applicants').updateOne({ id: applicantId },
-            {
-                '$set': {
-                    recommendations: applicantInfo.recommendations.concat({ username, text }),
-                },
-            })
-        const updatedApplicantInfo = await db.collection("applicants").findOne({ id: applicantId })
-        res.status(200).json(updatedApplicantInfo);
-        client.close(); 
-   
-
-        
+    })
 });
 
 
