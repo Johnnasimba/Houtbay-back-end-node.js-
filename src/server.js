@@ -59,6 +59,26 @@ app.post('/api/applicants/:id', async (req, res) => {
     })
 });
 
+app.post('/api/employerRequest/:id', async (req, res) => {
+
+    withDB(async (db) => {
+
+        const employerRequestId = parseInt(req.params.id);
+        const { employerName, phone, email, employerMessage, applicantSelected, applicantId } = req.body;
+   
+       await db.collection('employerRequest').insertOne({
+           employerName,
+           phone,
+           email,
+           employerMessage,
+           applicantSelected,
+           applicantId
+         });
+        const currentRequest = await db.collection("employerRequest").findOne({ applicantId: employerRequestId });
+        res.status(200).json(currentRequest);
+    })
+});
+
 
 
 
