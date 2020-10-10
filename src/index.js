@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 
 const withDB = async (operations) => {
     try {
-        const url = "mongodb+srv://JOHN:0995816060@cluster0.bfy6i.mongodb.net/JOHN?retryWrites=true&w=majority";
+        const url = process.env.MONGODB_URL || "mongodb+srv://JOHN:0995816060@cluster0.bfy6i.mongodb.net/JOHN?retryWrites=true&w=majority";
         const client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
     
             
@@ -82,6 +82,10 @@ app.post('/api/employerRequest/:id', async (req, res) => {
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'));
 })
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('/build'));
+}
+
 
 app.listen(PORT, () => {
     console.log(` Server Listening on Port ${PORT}`)
