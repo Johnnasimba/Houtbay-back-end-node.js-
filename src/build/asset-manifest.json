@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a9d094a.chunk.css",
-    "main.js": "/static/js/main.9536d97f.chunk.js",
-    "main.js.map": "/static/js/main.9536d97f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fca178c7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fca178c7.js.map",
-    "static/js/2.f7b65722.chunk.js": "/static/js/2.f7b65722.chunk.js",
-    "static/js/2.f7b65722.chunk.js.map": "/static/js/2.f7b65722.chunk.js.map",
+    "main.css": "/static/css/main.56b69b7e.chunk.css",
+    "main.js": "/static/js/main.22766812.chunk.js",
+    "main.js.map": "/static/js/main.22766812.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.92ee656d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.92ee656d.js.map",
+    "static/css/2.9a9a1f6f.chunk.css": "/static/css/2.9a9a1f6f.chunk.css",
+    "static/js/2.494bfb97.chunk.js": "/static/js/2.494bfb97.chunk.js",
+    "static/js/2.494bfb97.chunk.js.map": "/static/js/2.494bfb97.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.36d27a762e2123c5f8f9873753402080.js": "/precache-manifest.36d27a762e2123c5f8f9873753402080.js",
+    "precache-manifest.c0bfe1716b4249660087537f6c320d42.js": "/precache-manifest.c0bfe1716b4249660087537f6c320d42.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4a9d094a.chunk.css.map": "/static/css/main.4a9d094a.chunk.css.map",
-    "static/js/2.f7b65722.chunk.js.LICENSE.txt": "/static/js/2.f7b65722.chunk.js.LICENSE.txt"
+    "static/css/2.9a9a1f6f.chunk.css.map": "/static/css/2.9a9a1f6f.chunk.css.map",
+    "static/css/main.56b69b7e.chunk.css.map": "/static/css/main.56b69b7e.chunk.css.map",
+    "static/js/2.494bfb97.chunk.js.LICENSE.txt": "/static/js/2.494bfb97.chunk.js.LICENSE.txt",
+    "static/media/John Nasimba.jpg": "/static/media/John Nasimba.66925f8c.jpg",
+    "static/media/alinafemakwiti.jpg": "/static/media/alinafemakwiti.25e4a8fe.jpg",
+    "static/media/esnartgreen.jpg": "/static/media/esnartgreen.65310ff8.jpg",
+    "static/media/fostinokanada.jpg": "/static/media/fostinokanada.8ffe9cfb.jpg",
+    "static/media/jeffreymakokola.jpg": "/static/media/jeffreymakokola.490ad6cc.jpg",
+    "static/media/kamanga.jpg": "/static/media/kamanga.2a0ee2d9.jpg",
+    "static/media/kilionsolobala.jpg": "/static/media/kilionsolobala.82e0ff60.jpg",
+    "static/media/sarahbanda.png": "/static/media/sarahbanda.f6acca93.png",
+    "static/media/tisungecustom.jpg": "/static/media/tisungecustom.3ea0e82d.jpg",
+    "static/media/veronicaandrea.png": "/static/media/veronicaandrea.a42de3c9.png",
+    "static/media/wysonchabwela.png": "/static/media/wysonchabwela.cd37aaca.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fca178c7.js",
-    "static/js/2.f7b65722.chunk.js",
-    "static/css/main.4a9d094a.chunk.css",
-    "static/js/main.9536d97f.chunk.js"
+    "static/js/runtime-main.92ee656d.js",
+    "static/css/2.9a9a1f6f.chunk.css",
+    "static/js/2.494bfb97.chunk.js",
+    "static/css/main.56b69b7e.chunk.css",
+    "static/js/main.22766812.chunk.js"
   ]
 }

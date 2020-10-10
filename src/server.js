@@ -6,6 +6,7 @@ const path = require('path');
 
 const app = express();
 const PORT = 8000;
+app.use(express.static(path.join(__dirname, '/build')))
 app.use(bodyParser.json())
 
 const withDB = async (operations) => {
@@ -78,11 +79,9 @@ app.post('/api/employerRequest/:id', async (req, res) => {
         res.status(200).json(currentRequest);
     })
 });
-
-
-
-
-
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/build/index.html'));
+})
 
 app.listen(PORT, () => {
     console.log(` Server Listening on Port ${PORT}`)
