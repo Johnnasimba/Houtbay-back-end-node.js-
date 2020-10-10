@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-client": "cd src && npm install",
     "heroku-postbuild": "npm run install-client",
-    "start": "nodemon babel-node src/index.js"
+    "start": "nodemon babel-node src/server.js"
   },
   "author": "John Nasimba",
   "license": "ISC",
