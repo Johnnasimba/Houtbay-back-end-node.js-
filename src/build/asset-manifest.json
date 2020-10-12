@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4bbb0d0.chunk.css",
-    "main.js": "/static/js/main.c3783e9f.chunk.js",
-    "main.js.map": "/static/js/main.c3783e9f.chunk.js.map",
+    "main.css": "/static/css/main.e9955b31.chunk.css",
+    "main.js": "/static/js/main.4fa15971.chunk.js",
+    "main.js.map": "/static/js/main.4fa15971.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.92ee656d.js",
     "runtime-main.js.map": "/static/js/runtime-main.92ee656d.js.map",
     "static/css/2.9a9a1f6f.chunk.css": "/static/css/2.9a9a1f6f.chunk.css",
-    "static/js/2.90f7dec4.chunk.js": "/static/js/2.90f7dec4.chunk.js",
-    "static/js/2.90f7dec4.chunk.js.map": "/static/js/2.90f7dec4.chunk.js.map",
+    "static/js/2.97eba6d1.chunk.js": "/static/js/2.97eba6d1.chunk.js",
+    "static/js/2.97eba6d1.chunk.js.map": "/static/js/2.97eba6d1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d39a43d5324ca5e749d37c9f349d1213.js": "/precache-manifest.d39a43d5324ca5e749d37c9f349d1213.js",
+    "precache-manifest.bbe96c6b98c9a555ad869512c2f060b3.js": "/precache-manifest.bbe96c6b98c9a555ad869512c2f060b3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9a9a1f6f.chunk.css.map": "/static/css/2.9a9a1f6f.chunk.css.map",
-    "static/css/main.a4bbb0d0.chunk.css.map": "/static/css/main.a4bbb0d0.chunk.css.map",
-    "static/js/2.90f7dec4.chunk.js.LICENSE.txt": "/static/js/2.90f7dec4.chunk.js.LICENSE.txt",
+    "static/css/main.e9955b31.chunk.css.map": "/static/css/main.e9955b31.chunk.css.map",
+    "static/js/2.97eba6d1.chunk.js.LICENSE.txt": "/static/js/2.97eba6d1.chunk.js.LICENSE.txt",
     "static/media/John Nasimba.jpg": "/static/media/John Nasimba.66925f8c.jpg",
     "static/media/alinafemakwiti.jpg": "/static/media/alinafemakwiti.25e4a8fe.jpg",
+    "static/media/background-image.jpeg": "/static/media/background-image.da091fe7.jpeg",
     "static/media/esnartgreen.jpg": "/static/media/esnartgreen.65310ff8.jpg",
     "static/media/fostinokanada.jpg": "/static/media/fostinokanada.8ffe9cfb.jpg",
     "static/media/jeffreymakokola.jpg": "/static/media/jeffreymakokola.490ad6cc.jpg",
@@ -29,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.92ee656d.js",
     "static/css/2.9a9a1f6f.chunk.css",
-    "static/js/2.90f7dec4.chunk.js",
-    "static/css/main.a4bbb0d0.chunk.css",
-    "static/js/main.c3783e9f.chunk.js"
+    "static/js/2.97eba6d1.chunk.js",
+    "static/css/main.e9955b31.chunk.css",
+    "static/js/main.4fa15971.chunk.js"
   ]
 }
