@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc2397bc062e428f69f1eae8b6d54c6d",
+    "revision": "aed1220acbd3935308a77e91fece8476",
     "url": "/index.html"
   },
   {
-    "revision": "a143ec7ce9a5e55fede8",
+    "revision": "1373e5d48e7e70becaff",
     "url": "/static/css/2.9a9a1f6f.chunk.css"
   },
   {
-    "revision": "39c005ca1e5ee8825da8",
+    "revision": "f9742b7a1203afdcfe02",
     "url": "/static/css/main.e9955b31.chunk.css"
   },
   {
-    "revision": "a143ec7ce9a5e55fede8",
-    "url": "/static/js/2.97eba6d1.chunk.js"
+    "revision": "1373e5d48e7e70becaff",
+    "url": "/static/js/2.1034ce23.chunk.js"
   },
   {
     "revision": "fafd5ab210ed7eb86be99142d1b3ab06",
-    "url": "/static/js/2.97eba6d1.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.1034ce23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "39c005ca1e5ee8825da8",
-    "url": "/static/js/main.4fa15971.chunk.js"
+    "revision": "f9742b7a1203afdcfe02",
+    "url": "/static/js/main.42570566.chunk.js"
   },
   {
     "revision": "ec9875811aa0f00c2e31",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "82e0ff605fbb0d21a716ad40ca790d63",
     "url": "/static/media/kilionsolobala.82e0ff60.jpg"
+  },
+  {
+    "revision": "9609da32cadabf7112ba8edaf6df5822",
+    "url": "/static/media/meta-image.9609da32.jpeg"
   },
   {
     "revision": "f6acca93b8d1016fa68039d7a558086e",
